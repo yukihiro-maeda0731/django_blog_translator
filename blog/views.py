@@ -2,8 +2,10 @@ from django.shortcuts import render
 
 from blog.models import Post
 
+from django.views import generic
+
 # Create your views here.
 
-class BlogView:
+class BlogView(generic.DetailView):
     model = Post
-    template_name = 'blog.heml'
+    template_name = 'blog.html'
