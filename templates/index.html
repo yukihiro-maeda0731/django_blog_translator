@@ -15,7 +15,7 @@
                             {{post.title}}
                         </h2>
                         <p class="card-text">
-                            {{post.content}}
+                            {{post.content | slice:"500"}}
                         </p>
                         <p class="card-text">
                             Author: {{post.author}}
